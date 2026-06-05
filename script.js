@@ -71,7 +71,7 @@ function loadBlogPost(slug, event) {
       `;
     })
     .catch(() => {
-      document.querySelector('#container').innerHTML = "<p>Post not found :(</p>";
+      document.querySelector('#container').innerHTML = "<p>404</p>";
     });    document.querySelector('#container').innerHTML = `
       <div class="post-content">
         <a href="#" id="back-to-index" onclick="goBack(); return false;">← Back</a>
